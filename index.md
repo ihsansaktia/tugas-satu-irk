@@ -39,7 +39,7 @@ Langkah-langkah penyelesaian berupa:
     a.	 Pengecekan apakah sudah masuk kasus basis, jika sudah sampai lantai paling atas dan semua makanan ringan sudah terjual maka kembalikan hasilnya dan rutenya. Jika makanan belum terjual habis, maka keluarkan sebuah nilai tak hingga (atau sebuah nilai atas yang didefinisikan).  
     b.	Jika bukan kasus basis, lakukan pengunjungan ke kombinasi kunjungan yang mungkin (diambil dari pembeliPotensial) baik dari tangga kiri maupun tangga kanan dengan cara memanggil fungsi penyelesaian secara rekursif dengan parameter yang sudah disesuaikan.  
     c.	Hasil dari tiap kunjungan dibandingkan nilai langkahnya yang terkecil.  
-    d.	Hasil yang terkecil dijadikan nilai pada matriks 3 dimensi DP[lantai saat itu][posisi tangga][banyak makanan tersisa]
+    d.	Hasil yang terkecil dijadikan nilai pada matriks 3 dimensi DP[lantai saat itu][posisi tangga][banyak makanan tersisa]  
     e.	Kembalikan nilai DP[lantai saat itu][posisi tangga][banyak makanan tersisa]  
   5.	Hasil dari pemanggilan fungsi rekursif pencari solusi tersebut lalu cetak.  
 
