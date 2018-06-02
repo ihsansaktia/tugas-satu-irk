@@ -13,7 +13,7 @@ Di tiap cell matriks terdapat nilai-nilai yang merepresentasikan modelnya. Sebua
 
 Oleh karena itu, sebuah laboratorium teknik di Institut Teknologi Bandung dapat dimodelkan sebagai:  
 
-**-1 0 0 0 0 -1  **
+**-1 0 0 0 0 -1**  
 -1 4 5 0 1 -1  
 -1 0 0 6 4 -1  
 **-1** 1 1 0 1 -1  
