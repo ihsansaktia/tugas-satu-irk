@@ -21,3 +21,47 @@ Oleh karena itu, sebuah laboratorium teknik di Institut Teknologi Bandung dapat 
 Dengan titik awal (0,0) berada di kiri bawah dan tujuan akhir adalah lantai paling atas.
 
 Pemrograman dinamis dipilih sebagai strategi penyelesaian masalah ini dikarenakan properti-propertinya yang sesuai. Strategi bruteforce tidak akan mangkus dalam menyelesaikan masalah ini dikarenakan banyaknya upa-masalah yang diulang pencariannya. Sedangkan strategi greedy tidak akan mangkus dalam menyelesaikan masalah ini dikarenakan kecenderungannya untuk jatuh ke maksimum lokal. Strategi pemrograman dinamislah yang memastikan didapatkannya jawaban yang mangkus dan sangkil.  
+
+### Penyelesaian
+Implementasi solusi dimulai dengan deklarasi:  
+  1.	Variable untuk menyimpan banyak lantai, kelas perlantai, makanan ringan yang akan dijual.  
+  2.	Matriks (Banyak Lantai)x(Banyak Kelas + 2) sebagai representasi dari model laboratorium teknik.  
+  3.	Vector sebuah Pair <Integer dan Vector sebuah Integer> bernama DP. Integer pada Pair berisi banyaknya langkah yang sudah dilakukan dan Vector sebuah Integer di dalam pair berisi rute dari langkah tersebut. Vector DP ini memiliki 3 dimensi. Dimensi pertama merepresentasikan lantai. Dimensi kedua merepresentasikan datangnya dari tangga kiri atau kanan. Dimensi ketiga merepresentasikan banyaknya makanan ringannya yang tersisa.  
+  4.	 Arrah sebuah Vector sebuah Pair<Integer & Integer> bernama pembeliPotensial. Vector ini digunakan untuk mengingat letak dari pembeli potensial pada suatu lantai dan kelasnya.  
+
+Langkah-langkah penyelesaian berupa:  
+  1.	Masukan berupa banyaknya lantai, kelas perlantai, makanan ringan yang akan dijual akan diterima.   
+  2.	Kemudian sebuah integer sebanyak (banyak lantai X (kelas perlantai + 2)) akan diterima dan dimasukan ke dalam matriks. 
+  3.	Selanjutnya, pembeliPotensial diisi berdasarkan matriks.  
+  4.	Selanjutnya, sebuah fungsi rekursif pencari solusi dari titik (0,0) dengan total makanan yang akan dijual dipanggil. Fungsi ini akan melakukan:  
+    a.	 Pengecekan apakah sudah masuk kasus basis, jika sudah sampai lantai paling atas dan semua makanan ringan sudah terjual maka kembalikan hasilnya dan rutenya. Jika makanan belum terjual habis, maka keluarkan sebuah nilai tak hingga (atau sebuah nilai atas yang didefinisikan).  
+    b.	Jika bukan kasus basis, lakukan pengunjungan ke kombinasi kunjungan yang mungkin (diambil dari pembeliPotensial) baik dari tangga kiri maupun tangga kanan dengan cara memanggil fungsi penyelesaian secara rekursif dengan parameter yang sudah disesuaikan.  
+    c.	Hasil dari tiap kunjungan dibandingkan nilai langkahnya yang terkecil.  
+    d.	Hasil yang terkecil dijadikan nilai pada matriks 3 dimensi DP[lantai saat itu][posisi tangga][banyak makanan tersisa]
+    e.	Kembalikan nilai DP[lantai saat itu][posisi tangga][banyak makanan tersisa]  
+  5.	Hasil dari pemanggilan fungsi rekursif pencari solusi tersebut lalu cetak.  
+
+
+### Eksekusi
+Masukkan ke dalam program ditebalkan.
+
+Masukkan:
+Banyak lantai: **4**  
+Kelas perlantai: **4**  
+Banyak makanan: **9**  
+**-1 0 0 0 0 -1**  
+**-1 4 5 0 1 -1**  
+**-1 0 0 6 4 -1**  
+**-1 1 1 0 1 -1**  
+
+Keluaran:
+
+Banyak langkah untuk memperoleh hasil maksimum: 7
+Langkah:
+(0,0)->(0,1)->(0,2)->(1,2)->(2,2)->(1,2)->(0,2)->(0,3)
+
+### Analisis
+1.	Hasil keluaran merupakan rute paling mangkus dan sangkil dengan langkah terkecil dan seluruh danus makanan ringan terbeli.   
+2.	Jika strategi yang digunakan adalah Greedy, program akan terjebak dengan memilih simpul (1,0) yang nampaknya lebih menguntungkan terlebih dahulu.   
+3.	Jika menggunakan strategi Bruteforce, akan banyak upa-masalah yang dikalkulasi ulang mengakibatkan tidak mangkusnya program.  
+4.	Kekurangan dari program ini adalah diperlukannya pendataan mengenai hasil penjualan hari-hari sebelumnya agar didapatkan senarai pembeli potensial tiap kelas.  
