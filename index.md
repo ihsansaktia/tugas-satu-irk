@@ -25,13 +25,13 @@ Dynamic Programming adalah sebuah teknik yang diciptakan untuk melakukan komputa
 Pemrograman dinamis dipilih sebagai strategi penyelesaian masalah ini dikarenakan properti-propertinya yang sesuai. Strategi bruteforce tidak akan mangkus dalam menyelesaikan masalah ini dikarenakan banyaknya upa-masalah yang diulang pencariannya. Sedangkan strategi greedy tidak akan mangkus dalam menyelesaikan masalah ini dikarenakan kecenderungannya untuk jatuh ke maksimum lokal. Strategi pemrograman dinamislah yang memastikan didapatkannya jawaban yang mangkus dan sangkil.  
 
 ### Penyelesaian
-Implementasi solusi dimulai dengan deklarasi:  
+#### Implementasi solusi dimulai dengan deklarasi:  
   1.	Variable untuk menyimpan banyak lantai, kelas perlantai, makanan ringan yang akan dijual.  
   2.	Matriks (Banyak Lantai)x(Banyak Kelas + 2) sebagai representasi dari model laboratorium teknik.  
   3.	Vector sebuah Pair <Integer dan Vector sebuah Integer> bernama DP. Integer pada Pair berisi banyaknya langkah yang sudah dilakukan dan Vector sebuah Integer di dalam pair berisi rute dari langkah tersebut. Vector DP ini memiliki 3 dimensi. Dimensi pertama merepresentasikan lantai. Dimensi kedua merepresentasikan datangnya dari tangga kiri atau kanan. Dimensi ketiga merepresentasikan banyaknya makanan ringannya yang tersisa.  
   4.	 Arrah sebuah Vector sebuah Pair<Integer & Integer> bernama pembeliPotensial. Vector ini digunakan untuk mengingat letak dari pembeli potensial pada suatu lantai dan kelasnya.  
 
-Langkah-langkah penyelesaian berupa:  
+#### Langkah-langkah penyelesaian berupa:  
   1.	Masukan berupa banyaknya lantai, kelas perlantai, makanan ringan yang akan dijual akan diterima.   
   2.	Kemudian sebuah integer sebanyak (banyak lantai X (kelas perlantai + 2)) akan diterima dan dimasukan ke dalam matriks. 
   3.	Selanjutnya, pembeliPotensial diisi berdasarkan matriks.  
@@ -47,7 +47,7 @@ Langkah-langkah penyelesaian berupa:
 ### Eksekusi
 Masukkan ke dalam program ditebalkan.
 
-Masukkan:
+#### Masukkan:  
 Banyak lantai: **4**  
 Kelas perlantai: **4**  
 Banyak makanan: **9**  
@@ -56,7 +56,7 @@ Banyak makanan: **9**
 **-1 0 0 6 4 -1**  
 **-1 1 1 0 1 -1**  
 
-Keluaran:  
+#### Keluaran:  
 
 Banyak langkah untuk memperoleh hasil maksimum: 7  
 Langkah:  
