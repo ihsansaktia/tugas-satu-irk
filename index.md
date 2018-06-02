@@ -29,7 +29,7 @@ Pemrograman dinamis dipilih sebagai strategi penyelesaian masalah ini dikarenaka
   1.	Variable untuk menyimpan banyak lantai, kelas perlantai, makanan ringan yang akan dijual.  
   2.	Matriks (Banyak Lantai)x(Banyak Kelas + 2) sebagai representasi dari model laboratorium teknik.  
   3.	Vector sebuah Pair <Integer dan Vector sebuah Integer> bernama DP. Integer pada Pair berisi banyaknya langkah yang sudah dilakukan dan Vector sebuah Integer di dalam pair berisi rute dari langkah tersebut. Vector DP ini memiliki 3 dimensi. Dimensi pertama merepresentasikan lantai. Dimensi kedua merepresentasikan datangnya dari tangga kiri atau kanan. Dimensi ketiga merepresentasikan banyaknya makanan ringannya yang tersisa.  
-  4.	 Arrah sebuah Vector sebuah Pair<Integer & Integer> bernama pembeliPotensial. Vector ini digunakan untuk mengingat letak dari pembeli potensial pada suatu lantai dan kelasnya.  
+  4.	 Array sebuah Vector sebuah Pair<Integer & Integer> bernama pembeliPotensial. Vector ini digunakan untuk mengingat letak dari pembeli potensial pada suatu lantai dan kelasnya.  
 
 #### Langkah-langkah penyelesaian berupa:  
   1.	Masukan berupa banyaknya lantai, kelas perlantai, makanan ringan yang akan dijual akan diterima.   
