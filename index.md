@@ -1,4 +1,4 @@
-##Model and Simulation
+## Model and Simulation
 Modelling adalah sebuah proses membuat model, termasuk komponen pembentuk dan cara model tersebut bekerja. Model ini dibuat menyerupai sebuah sistem di dunia nyata, digunakan untuk membuat analisa prediksi perubahan yang terjadi pada sistem. Simulation adalah mengoperasikan sebuah model untuk menganalisa performa sebuah sistem.
 
 Sebagai contoh, jika terdapat permasalahan menjual makanan di sebuah gedung bertingkat dengan rute terpendek tapi memiliki keuntungan maksimum. Bisa dimodelkan sebagai sebuah matrix 2D dengan tiap baris sebagai representasi tingkat pada gedung, dan nilai elemen >= 0 yang merepresentasikan pembeli potensial pada sebuah ruangan di tingkat tersebut.
