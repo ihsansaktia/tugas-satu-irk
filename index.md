@@ -56,10 +56,10 @@ Banyak makanan: **9**
 **-1 0 0 6 4 -1**  
 **-1 1 1 0 1 -1**  
 
-Keluaran:
+Keluaran:  
 
-Banyak langkah untuk memperoleh hasil maksimum: 7
-Langkah:
+Banyak langkah untuk memperoleh hasil maksimum: 7  
+Langkah:  
 (0,0)->(0,1)->(0,2)->(1,2)->(2,2)->(1,2)->(0,2)->(0,3)
 
 ### Analisis
@@ -67,3 +67,6 @@ Langkah:
 2.	Jika strategi yang digunakan adalah Greedy, program akan terjebak dengan memilih simpul (1,0) yang nampaknya lebih menguntungkan terlebih dahulu.   
 3.	Jika menggunakan strategi Bruteforce, akan banyak upa-masalah yang dikalkulasi ulang mengakibatkan tidak mangkusnya program.  
 4.	Kekurangan dari program ini adalah diperlukannya pendataan mengenai hasil penjualan hari-hari sebelumnya agar didapatkan senarai pembeli potensial tiap kelas.  
+
+### Kesimpulan  
+Penggunaan pemrograman dinamis dalam menyelesaikan masalah rute penjualan danus makanan ringan menghasilkan keluaran yang mangkus dan sangkil. Hanya saja, diperlukan data pembeli potensial tiap kelas terlebih dahulu. Dengan koordinasi antar panitia program kerja sebuah himpunan atau organisasi untuk mendata penjualan tiap harinya agar mendapatkan senarai pembeli potensial, pendekatan ini dapat digunakan untuk memaksimalkan pendapatan dana usaha sembari meminimalkan energi dan waktu yang habis dalam penjualan.  
