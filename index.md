@@ -7,7 +7,7 @@ Dynamic Programming adalah sebuah teknik yang diciptakan untuk melakukan komputa
 
 Simulasi bisa dijalankan dengan mengubah tinggi gedung ataupun jumlah pembeli potensial pada tiap ruangan. Setelah melakukan survey minat pembelian sebuah produk, seorang pengusaha bisa melakukan perhitungan keuntungan maksimum dengan melakukan simulasi pada model yang telah dibuat.  
 
-Permasalahan ini dapat digambarkan dengan mencari rute terpendek dari simpul awal ke simpul akhir sembari mengumpulkan nilai-nilai di tiap simpul yang di kunjungi. Untuk permasalahan ini kita definisikan model laboratorium teknik direpresentasikan dengan sebuah matriks 4x6. Titik awal kita definisikan berada di paling bawah, baris 0 kolom 0. Titik akhir yang berupa lantai di mana kelas sang mahasiswa berada dan ingin dicapai berada di lantai teratas.  
+Permasalahan menjual makanan ringan di laboratorium teknik dapat digambarkan dengan mencari rute terpendek dari simpul awal ke simpul akhir sembari mengumpulkan nilai-nilai di tiap simpul yang di kunjungi. Untuk permasalahan ini kita definisikan model laboratorium teknik direpresentasikan dengan sebuah matriks 4x6. Titik awal kita definisikan berada di paling bawah, baris 0 kolom 0. Titik akhir yang berupa lantai di mana kelas sang mahasiswa berada dan ingin dicapai berada di lantai teratas.  
 
 Di tiap cell matriks terdapat nilai-nilai yang merepresentasikan modelnya. Sebuah cell dengan nilai “-1” berada di sebelah kiri dan kanan matriks, hal ini merepresentasikan tangga yang ada di laboratorium teknik Institut Teknologi Bandung. Sebuah cell dengan nilai >= 0 merepresentasikan banyaknya pembeli potensial pada kelas tersebut.  
 
