@@ -13,11 +13,11 @@ Di tiap cell matriks terdapat nilai-nilai yang merepresentasikan modelnya. Sebua
 
 Oleh karena itu, sebuah laboratorium teknik di Institut Teknologi Bandung dapat dimodelkan sebagai:  
 
--1 0 0 0 0 -1  
+**-1 0 0 0 0 -1  **
 -1 4 5 0 1 -1  
 -1 0 0 6 4 -1  
--1 1 1 0 1 -1  
+**-1** 1 1 0 1 -1  
 
-Dengan titik awal (0,0) berada di kiri bawah berwarna merah dan tujuan akhir adalah lantai paling atas berwarna biru.
+Dengan titik awal (0,0) berada di kiri bawah dan tujuan akhir adalah lantai paling atas.
 
 Pemrograman dinamis dipilih sebagai strategi penyelesaian masalah ini dikarenakan properti-propertinya yang sesuai. Strategi bruteforce tidak akan mangkus dalam menyelesaikan masalah ini dikarenakan banyaknya upa-masalah yang diulang pencariannya. Sedangkan strategi greedy tidak akan mangkus dalam menyelesaikan masalah ini dikarenakan kecenderungannya untuk jatuh ke maksimum lokal. Strategi pemrograman dinamislah yang memastikan didapatkannya jawaban yang mangkus dan sangkil.  
